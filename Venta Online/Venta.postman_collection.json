@@ -1,0 +1,570 @@
+{
+	"info": {
+		"_postman_id": "14f88e41-7ca4-4596-9650-66c89fccc457",
+		"name": "Ventas Online",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "agregarUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Javier",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "jandres2019130",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/agregarUsuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agregarUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "getToken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarUsuario",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTZiMzcyMTJmMzJmNTQ0NzUxYzQiLCJub21icmUiOiJKYXZpZXIiLCJ1c2VybmFtZSI6ImphbmRyZXMyMDE5MTMwIiwicm9sIjoiUk9MX0NMSUVOVEUiLCJpYXQiOjE2MTU1ODcyMjcsImV4cCI6MTYxNjAxOTIyN30.wm4HwewtVEgbdr_lzQWHSAzZEwmGfXo7_0ZQHkJiwO0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Javier",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "jandres2019131",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarUsuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarUsuario",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTZiMzcyMTJmMzJmNTQ0NzUxYzQiLCJub21icmUiOiJKYXZpZXIiLCJ1c2VybmFtZSI6ImphbmRyZXMyMDE5MTMwIiwicm9sIjoiUk9MX0NMSUVOVEUiLCJpYXQiOjE2MTU1ODcyMjcsImV4cCI6MTYxNjAxOTIyN30.wm4HwewtVEgbdr_lzQWHSAzZEwmGfXo7_0ZQHkJiwO0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "604be6b37212f32f544751c4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/eliminarUsuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregarCategoria",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTY2NDcyMTJmMzJmNTQ0NzUxYzAiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbiIsInJvbCI6IlJPTF9BRE1JTiIsImlhdCI6MTYxNTU4NzQ5NiwiZXhwIjoxNjE2MDE5NDk2fQ.ih7d5LieDFpWv1XUtZaoAx9ydkzXJ015aenDuEfbdO4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Consolas de videojuegos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/agregarCategoria",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agregarCategoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarCategoria",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTY2NDcyMTJmMzJmNTQ0NzUxYzAiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbiIsInJvbCI6IlJPTF9BRE1JTiIsImlhdCI6MTYxNTU4NzQ5NiwiZXhwIjoxNjE2MDE5NDk2fQ.ih7d5LieDFpWv1XUtZaoAx9ydkzXJ015aenDuEfbdO4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/eliminarCategoria/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarCategoria",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604be9017212f32f544751c6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarCategoria",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTY2NDcyMTJmMzJmNTQ0NzUxYzAiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbiIsInJvbCI6IlJPTF9BRE1JTiIsImlhdCI6MTYxNTU4NzQ5NiwiZXhwIjoxNjE2MDE5NDk2fQ.ih7d5LieDFpWv1XUtZaoAx9ydkzXJ015aenDuEfbdO4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Consolas de videojuegos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarCategoria/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarCategoria",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604be8ec7212f32f544751c5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerCategorias",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerCategorias",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerCategorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregarProducto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTY2NDcyMTJmMzJmNTQ0NzUxYzAiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbiIsInJvbCI6IlJPTF9BRE1JTiIsImlhdCI6MTYxNTU4NzQ5NiwiZXhwIjoxNjE2MDE5NDk2fQ.ih7d5LieDFpWv1XUtZaoAx9ydkzXJ015aenDuEfbdO4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "FIFA 21",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "100.99",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "idCategoria",
+							"value": "604be6647212f32f544751c1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/agregarProducto",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agregarProducto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editarProducto",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTY2NDcyMTJmMzJmNTQ0NzUxYzAiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbiIsInJvbCI6IlJPTF9BRE1JTiIsImlhdCI6MTYxNTU4NzQ5NiwiZXhwIjoxNjE2MDE5NDk2fQ.ih7d5LieDFpWv1XUtZaoAx9ydkzXJ015aenDuEfbdO4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "WWE 2K",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarProducto/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarProducto",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604beb7cb5178c2ce430a682"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarProducto",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTY2NDcyMTJmMzJmNTQ0NzUxYzAiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbiIsInJvbCI6IlJPTF9BRE1JTiIsImlhdCI6MTYxNTU4NzQ5NiwiZXhwIjoxNjE2MDE5NDk2fQ.ih7d5LieDFpWv1XUtZaoAx9ydkzXJ015aenDuEfbdO4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/eliminarProducto/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarProducto",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604beb7cb5178c2ce430a682"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerProductos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerProductos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerProductos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerProductosCategoria",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerProductosCategoria/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerProductosCategoria",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604be6647212f32f544751c1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerPorNombre",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "UNCHARTED 4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerPorNombre",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerPorNombre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerAgotados",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cantidad",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtenerAgotados",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtenerAgotados"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
